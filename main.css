@@ -1,0 +1,19 @@
+#theList {
+    color: blue; 
+    background-color: aquamarine; 
+    list-style-type: circle;
+}
+
+#addBtn {
+    color: brown; 
+}
+
+h1 {
+    margin: 5px; 
+    color: red; 
+}
+
+/* Strike-through text for completed tasks */
+.completed {
+    text-decoration-line: line-through; 
+}
