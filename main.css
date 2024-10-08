@@ -1,6 +1,8 @@
+body{
+    background-color: green;
+}
 #theList {
     color: blue; 
-    background-color: aquamarine; 
     list-style-type: circle;
 }
 
@@ -16,4 +18,6 @@ h1 {
 /* Strike-through text for completed tasks */
 .completed {
     text-decoration-line: line-through; 
+    background-color: aquamarine; 
+
 }
