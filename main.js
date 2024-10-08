@@ -38,6 +38,8 @@ function addTasks() {
     newTask.innerText = content;
     newItem.appendChild(newTask);
 
+
+
     //save data in array
     theArray.push(content);
     input1.value = "";
@@ -52,7 +54,8 @@ function addTasks() {
             todoCounting++;
             newItem.setAttribute("class", "completed")
         }
-        todoNumber.innerText= `Number of completed tasks: ${todoCounting}`;
+        todoNumber.innerText= `${todoCounting} completed `;
+        
 
     });
 };
