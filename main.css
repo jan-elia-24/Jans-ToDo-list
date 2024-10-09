@@ -1,23 +1,34 @@
 body{
-    background-color: green;
+    background-color: rgb(253, 173, 172);
+    opacity: 100%;
 }
 #theList {
-    color: blue; 
-    list-style-type: circle;
+    color: black; 
+    list-style-type: none;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#theWarner {
+        color: red;
+        
+        animation: blink 2s infinite;
 }
 
 #addBtn {
-    color: brown; 
+    color: black; 
 }
 
 h1 {
+    text-size-adjust: 100px;
     margin: 5px; 
-    color: red; 
+    color: black; 
 }
 
 /* Strike-through text for completed tasks */
 .completed {
     text-decoration-line: line-through; 
-    background-color: aquamarine; 
-
+    text-shadow: gray;
 }

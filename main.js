@@ -21,7 +21,7 @@ addBtn.addEventListener("click", addTasks);
 function addTasks() {
 
     let content = input1.value;
-   
+
     //Check the content of the input
     if (content.length == 0) {
         theWarner.innerHTML = "Please enter a task!";
@@ -45,7 +45,7 @@ function addTasks() {
     input1.value = "";
 
     // Add click listener to the task
-    newTask.addEventListener("click",function () {
+    newTask.addEventListener("click", function () {
         if (newItem.getAttribute("class") == "completed") {
             todoCounting--;
             newItem.setAttribute("class", "")
@@ -54,12 +54,21 @@ function addTasks() {
             todoCounting++;
             newItem.setAttribute("class", "completed")
         }
-        todoNumber.innerText= `${todoCounting} completed `;
-        
+        todoNumber.innerText = `${todoCounting} completed `;
+
 
     });
-};
+    // Create and add delete button
+    const deleteBtn = document.createElement("span");
+    deleteBtn.innerHTML = "🗑️";  // Trash bin emoji
+    newItem.appendChild(deleteBtn);
 
+    // Add delete functionality
+    deleteBtn.addEventListener("click", function () {
+        theList.removeChild(newItem);
+    });
+
+};
 
 
 
