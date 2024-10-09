@@ -12,6 +12,7 @@ const theArray = [];
 let todoCounting = 0;
 
 
+
 //add listener to the button
 addBtn.addEventListener("click", addTasks);
 
@@ -25,7 +26,6 @@ function addTasks() {
     //Check the content of the input
     if (content.length == 0) {
         theWarner.innerHTML = "Please enter a task!";
-        theWarner.style.color = "red";
         return;
     }
     theWarner.innerText = "";
@@ -46,24 +46,29 @@ function addTasks() {
 
     // Add click listener to the task
     newTask.addEventListener("click", function () {
-        if (newItem.getAttribute("class") == "completed") {
+        if (newTask.getAttribute("class") == "completed") {
             todoCounting--;
-            newItem.setAttribute("class", "")
+            newTask.setAttribute("class", "")
         }
         else {
             todoCounting++;
-            newItem.setAttribute("class", "completed")
+            newTask.setAttribute("class", "completed")
         }
         todoNumber.innerText = `${todoCounting} completed `;
 
 
     });
-    // Create and add delete button
+    
+    
+    // Create and add delete button with function
+    
     const deleteBtn = document.createElement("span");
-    deleteBtn.innerHTML = "🗑️";  // Trash bin emoji
+    deleteBtn.setAttribute("class","trashCan");
+    deleteBtn.innerHTML= "🗑️";
+    deleteBtn.style.marginLeft = "20px";
     newItem.appendChild(deleteBtn);
 
-    // Add delete functionality
+    
     deleteBtn.addEventListener("click", function () {
         theList.removeChild(newItem);
     });

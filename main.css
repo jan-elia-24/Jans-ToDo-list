@@ -1,34 +1,121 @@
-body{
-    background-color: rgb(253, 173, 172);
-    opacity: 100%;
-}
-#theList {
-    color: black; 
-    list-style-type: none;
-}
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-#theWarner {
-        color: red;
-        
-        animation: blink 2s infinite;
-}
-
-#addBtn {
-    color: black; 
+html {
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #f5cbcb, #f87d7d);
 }
 
 h1 {
-    text-size-adjust: 100px;
-    margin: 5px; 
-    color: black; 
+    font-size: xxx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
+
+body {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: -250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    animation: fadedBody 1s ease-out forwards;
+}
+
+@keyframes fadedBody {
+    0% {
+        top: -250px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+.fadedText {
+    opacity: 0;
+    animation: fadedText 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadedText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#input1 {
+
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+#addBtn {
+    font-size: larger;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+
+#theList {
+    color: black;
+    list-style-type: none;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    position: center;
+
+}
+
+#theWarner {
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    animation: blink 1s infinite;
+    margin-top: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* Strike-through text for completed tasks */
 .completed {
-    text-decoration-line: line-through; 
-    text-shadow: gray;
+    color: grey;
+    text-decoration: line-through;
+    transition: 0.8s;
+    cursor: pointer;
+    height: 30px;
+
+}
+
+.trashCan {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.trashCan:hover {
+    font-weight: 50;
 }
