@@ -55,6 +55,8 @@ function addTasks() {
             newTask.setAttribute("class", "completed")
         }
         todoNumber.innerText = `${todoCounting} completed `;
+     
+
 
 
     });
