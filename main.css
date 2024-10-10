@@ -8,7 +8,7 @@ h1 {
     font-size: xxx-large;
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    margin-bottom: -7px;
+    margin-bottom: -5px;
 }
 
 body {
@@ -55,13 +55,12 @@ body {
 }
 
 #todoNumber {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #input1 {
-
     font-size: larger;
     margin-bottom: 0;
 }

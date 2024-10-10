@@ -17,7 +17,6 @@ let todoCounting = 0;
 addBtn.addEventListener("click", addTasks);
 
 
-
 // The functions
 function addTasks() {
 
