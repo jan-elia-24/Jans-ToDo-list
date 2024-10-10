@@ -1,21 +1,21 @@
 html {
     height: 100vh;
-    margin: 0;
     background-image: linear-gradient(to bottom, #f5cbcb, #f87d7d);
 }
 
 h1 {
-    font-size: xxx-large;
+    font-size: 55px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     margin-bottom: -5px;
+    font-weight: 900;
 }
 
 body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
     background-color: white;
-    width: 400px;
+    width: 550px;
     padding-bottom: 20px;
     position: absolute;
     top: -250px;
@@ -62,15 +62,15 @@ body {
 
 #input1 {
     font-size: x-large;
-    margin-bottom: 0;
+    margin: 0 0 0 0px;
+    width: 225px;
 }
 
 #addBtn {
-    font-size: larger;
+    font-size: x-large;
     color: black;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 5px;
+    width: 60px;
 }
 
 
@@ -80,6 +80,10 @@ body {
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
     position: center;
+}
+
+li {
+    margin: 12px;
 }
 
 #theWarner {
@@ -117,10 +121,11 @@ body {
 }
 
 .trashCan {
-    font-size: x-large;
-    font-weight: bold;
+    font-size: large;
+    font-weight: lighter;
 }
 
 .trashCan:hover {
-    font-weight: 20;
+    font-weight: 900;
+    cursor: pointer;
 }
